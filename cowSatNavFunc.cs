@@ -11,7 +11,7 @@ namespace CowSatNav.Function
     {
         [FunctionName("cowSatNavFunc")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function , "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
             string url = "http://api.open-notify.org/iss-now.json";
